@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5vh;
+  color: black;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    max-width: 100%;
+  }
+}
